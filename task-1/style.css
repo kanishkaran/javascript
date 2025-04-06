@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: linear-gradient(135deg, #ffffff, #e3e3e3);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#textBox {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#textBox:focus {
+    border-color: #6a11cb;
+}
+
+#addButton {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#addButton:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
+ul {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.taskItem li {
+    display: flex;
+    color: #333;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #f9f9f9, #e3e3e3);
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.taskItem li:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #e3e3e3, #ffffff);
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.delete-btn:hover {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    transform: scale(1.1);
+}
