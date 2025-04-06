@@ -101,7 +101,3 @@ ul {
     transition: background 0.3s, transform 0.3s;
 }
 
-.delete-btn:hover {
-    background: linear-gradient(135deg, #ff416c, #ff4b2b);
-    transform: scale(1.1);
-}
