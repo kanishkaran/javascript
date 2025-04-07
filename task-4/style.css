@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(90deg, rgb(58, 58, 180) 0%, rgb(169, 213, 214) 50%, rgb(0, 255, 255) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.weatherContainer{
+    text-align: center;
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: rgba(89, 107, 123, 0.571);
+    padding: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.form{
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+    justify-content: center;
+}
+
+.input{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.searchbtn{
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+}
+
+.searchbtn:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.weatherInfo {
+    padding: 10px;
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weatherInfo .icon {
+    height: 200px;
+    width: 80%;
+    margin: 5px;
+}
+
+.weatherInfo .description {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.weatherInfo .info{
+    text-align: center;
+    color: white;
+}
+
