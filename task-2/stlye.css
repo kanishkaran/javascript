@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calcContainer {
+    display: flex;
+    margin: 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    height: 34rem;
+    width: 23rem;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.calcDisplay {
+    border: none;
+    border-radius: 15px;
+    margin: 1.5rem 1.5rem 0 1.5rem;
+    height: 30%;
+    font-size: 2rem;
+    background: linear-gradient(135deg, #ffffff, #e0e0e0);
+    color: #333;
+    padding: 1rem;
+    text-align: right;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.calcButtons {
+    display: flex;
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    height: 70%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    height: 20%;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.btn {
+    flex: 1;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #3a3a3a, #1e1e1e);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #4a4a4a, #2e2e2e);
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.btn:active {
+    transform: translateY(1px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn:nth-child() {
+    background: linear-gradient(135deg, #ff5722, #e64a19);
+}
+
+.btn:nth-child(4n):hover {
+    background: linear-gradient(135deg, #ff7043, #f4511e);
+}
+
+.btn:nth-child(4n):active {
+    background: linear-gradient(135deg, #e64a19, #d84315);
+}
+
+.btn:last-child {
+    background: linear-gradient(135deg, #4caf50, #388e3c);
+}
+
+.btn:last-child:hover {
+    background: linear-gradient(135deg, #66bb6a, #43a047);
+}
+
+.btn:last-child:active {
+    background: linear-gradient(135deg, #388e3c, #2e7d32);
+}
