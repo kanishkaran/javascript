@@ -10,12 +10,12 @@ inputField.addEventListener("keypress", function (e) {
 function sendMessage() {
   const text = inputField.value.trim();
   if (!text) return;
-  addMessage("You", text, "user");
+  addMessage( text, "user");
   inputField.value = "";
   simulateIncoming();
 }
 
-function addMessage(sender, text, type) {
+function addMessage(text, type) {
   const msg = document.createElement("div");
   msg.classList.add("message", type);
   const timestamp = new Date().toLocaleTimeString();
@@ -34,6 +34,6 @@ function simulateIncoming() {
       "Got it!"
     ];
     const randomReply = replies[Math.floor(Math.random() * replies.length)];
-    addMessage("Bot", randomReply, "bot");
+    addMessage( randomReply, "bot");
   }, 1000 + Math.random() * 2000);
 }
